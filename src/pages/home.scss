@@ -1,0 +1,11 @@
+#searchbar {
+    margin: auto;
+    width: 100%;
+    padding: 5rem; 
+    .form-control {
+        color:white;
+    }
+    ::placeholder {
+        color:white;
+    }
+}

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import MovieCard from "../components/MovieCard";
-import { MDBCol, MDBIcon } from "mdbreact";
+import MoviesList from "../components/MoviesList";
+import { MDBCol } from "mdbreact";
+import './home.scss';
 
 const Home = () => {
   const [searchInput, setSearchInput] = useState("")
@@ -10,6 +11,7 @@ const Home = () => {
       fetch(`http://www.omdbapi.com/?s=${searchInput}&apikey=42d3e6f7`)
       .then((response) => response.json())
       .then((response) => setResults(response))
+      .then((response) => (console.log(results)))
   };
 
   const handleChange = (event) => {
@@ -26,33 +28,19 @@ const Home = () => {
 
   return (
     <div>
-      <MDBCol md="6">
+      <MDBCol id="searchbar" md="10">
         <div className="input-group md-form form-sm form-1 pl-0">
-          <div className="input-group-prepend">
-            <span
-              className="input-group-text grey lighten-3"
-              id="basic-text1"
-            >
-              <MDBIcon className="text-white" icon="search" />
-            </span>
-          </div>
           <input
             value={searchInput}
             onChange={handleChange}
             className="form-control my-0 py-1"
             type="text"
-            placeholder="Rechercher un film"
+            placeholder="Recherchez un film, une série..."
             aria-label="Search"
           />
         </div>
       </MDBCol>
-      <div>
-        {results.Search?.map((movie) => (
-          <div>
-            <MovieCard movie={movie}/>
-          </div>
-        ))}
-      </div>
+      <MoviesList results={results}/>
     </div>
   );
 };
