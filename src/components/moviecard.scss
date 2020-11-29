@@ -1,0 +1,59 @@
+$myColor: #232121;
+$hoverBlack: #282828;
+$myGrey: #444444;
+
+#cardShow {
+    width: 18rem;
+    height: 32rem;
+    margin:1rem;
+    border-radius:1rem;
+    background-color: $myColor;
+    
+    #cardImg {
+        border-radius: 1rem 1rem 0 0;
+        &:hover {
+            opacity:0.7;
+            transition:0.3s;
+        }
+    }
+    #cardBody {
+        border: 1px solid $myGrey;
+        border-radius: 0 0 1rem 1rem ;
+        border-top: none;
+        background-color: $myColor;
+        &:hover {
+            background-color:$hoverBlack;
+            transition:0.3s;
+        }
+    }
+    #cardTitle, #cardYear {
+        font-family: 'DM Sans', sans-serif;
+        color:white;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        &:hover {
+            opacity:0.7;
+            transition:0.3s;
+        }
+    }
+    #cardTitle {
+        font-size:1.75rem;
+    }
+    #cardButton {
+        font-family: 'DM Sans', sans-serif;
+        display:flex;
+        justify-content:center;
+        margin:auto;
+        color:white;
+        background-color:$myColor !important;
+        border:1px solid white !important;
+        border-radius: 0.5rem;
+        &:hover {
+            color:$myColor;
+            background-color:white !important;
+            border:1px solid $myColor !important;
+            transition:0.3s;
+        }
+    }
+}

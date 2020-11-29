@@ -28,14 +28,14 @@ const Home = () => {
 
   return (
     <div>
-      <MDBCol id="searchbar" md="10">
+      <MDBCol id="searchbar" md="6">
         <div className="input-group md-form form-sm form-1 pl-0">
           <input
             value={searchInput}
             onChange={handleChange}
             className="form-control my-0 py-1"
             type="text"
-            placeholder="Recherchez un film, une série..."
+            placeholder="Type the title of a movie, series, cartoon..."
             aria-label="Search"
           />
         </div>

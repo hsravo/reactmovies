@@ -1,5 +1,6 @@
 import MovieCard from "../components/MovieCard";
 import {Container,Row,Col} from "react-bootstrap";
+import './movieslist.scss';
 
 const MoviesList = ({results}) => {
 

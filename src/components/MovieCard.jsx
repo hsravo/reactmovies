@@ -1,14 +1,17 @@
 import {Card, Button} from "react-bootstrap";
 import Logo from "../assets//img/default-movie.png";
+import './moviecard.scss'
 
 const MovieCard = ({ movie }) => {
   return (
-    <Card style={{ width: "18rem", height: "35rem", margin:"1rem"}}>
-      <Card.Img variant="top" src={movie.Poster === "N/A" ? Logo : movie.Poster} style={{ height:"20rem", objectFit:"cover" }} />
-      <Card.Body>
-        <Card.Title>{movie.Title}</Card.Title>
-        <Card.Text>{movie.Year}</Card.Text>
-        <Button variant="primary">Page du film</Button>
+    <Card id="cardShow">
+      <Card.Img id="cardImg" variant="top" src={movie.Poster === "N/A" ? Logo : movie.Poster} style={{ height:"20rem", objectFit:"cover" }} />
+      <Card.Body id="cardBody">
+        <Card.Title id="cardTitle">{movie.Title}</Card.Title>
+        <Card.Text id="cardYear">{movie.Year}</Card.Text>
+
+        <Button id="cardButton">More info</Button>
+
       </Card.Body>
     </Card>
   );
