@@ -1,13 +1,64 @@
-#searchbar {
+$myColor: #232121;
+$hoverBlack: #282828;
+$myGrey: #444444;
+
+
+.jumbotron {
+    background-color: $myColor;
+    height:100vh;
+    color:white;
     font-family: 'DM Sans', sans-serif;
-    margin: auto;
-    width: 100%;
-    padding: 5rem; 
-    .form-control {
-        color:white;
+    font-weight: bold;
+    box-shadow:none;    
+    #my-video {
+        position:absolute;
+        top:0;
+        right:0;
+        background-color: $myColor;
+        height:100vh;
+        width:auto;
+        z-index:0;
+        opacity:0.2;
+    
     }
-    ::placeholder {
-        color:white;
-        opacity:0.5;
+    .container {
+        z-index:2;
+        display:flex;
+        flex-direction: column;
+        align-content: center;
+        #introduction {
+            position:relative;
+            font-size:12rem;
+        }
+        #presentation {
+            position:relative;
+            font-size:6rem;
+            a {
+                text-decoration:underline;
+                color:white;
+                &:hover {
+                    color:#828282;
+                    transition:0.3s;
+
+                }
+            }
+        }
+        #searchbar {
+            position:relative;
+            font-family: 'DM Sans', sans-serif;
+            margin: auto;
+            width: 100%;
+            padding-top:1rem;
+            .form-control {
+                color:white;
+                height:4rem;
+                font-size:2rem;
+            }
+            ::placeholder {
+                color:white;
+                opacity:0.5;
+            }
+        
+        }
     }
 }

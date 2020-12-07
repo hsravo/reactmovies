@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
+
 
 @import './pages/home.scss';
 @import './components/moviecard.scss';
 @import './components/movieslist.scss';
 
 $myColor: #232121;
+$hoverBlack: #282828;
+$myGrey: #444444;
 
 body {
     background-color: $myColor;

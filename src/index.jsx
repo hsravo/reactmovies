@@ -7,12 +7,6 @@ import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 import './style.scss';
 
-const App = () => {
-  return (
-    <div>
-      <Home />
-		</div>
-  );
-}
 
-ReactDOM.render(<App />, document.querySelector("#root"));
+
+ReactDOM.render(<Home />, document.querySelector("#root"));
