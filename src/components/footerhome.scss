@@ -1,0 +1,15 @@
+#footer {
+    display:flex;
+    justify-content:center;
+    margin-bottom:2rem;
+    small {
+        color:white;
+        font-family:'DM Sans', sans-serif;
+        a {
+            color:white;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

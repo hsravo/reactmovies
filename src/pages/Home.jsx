@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import MoviesList from "../components/MoviesList";
 import { Jumbotron, Container } from "react-bootstrap";
 import { MDBCol } from "mdbreact";
+import NavHome from "../components/NavHome.jsx";
+import FooterHome from "../components/FooterHome.jsx";
 import "./home.scss";
 import vcr from "../assets/video/vcr.mp4";
 
@@ -32,7 +34,7 @@ const Home = () => {
 
   return (
     <div>
-
+      <NavHome />
       <Jumbotron fluid>
         <video autoPlay muted loop id="my-video">
           <source src={vcr} />
@@ -58,6 +60,7 @@ const Home = () => {
         </Container>
       </Jumbotron>
       <MoviesList results={results} />
+      <FooterHome />
     </div>
   );
 };

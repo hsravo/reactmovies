@@ -1,0 +1,31 @@
+$myColor: #232121;
+$hoverBlack: #282828;
+$myGrey: #444444;
+
+
+#nav {
+  background-color:transparent;
+  z-index:5;
+  box-shadow:none;  
+    #main-title {
+        color:white;
+        font-family:'DM Sans', sans-serif;
+        font-size:1.5rem;
+    }
+    #main-button {
+      margin-left:auto;
+      font-family: 'DM Sans', sans-serif;
+      display:flex;
+      justify-content:right;
+      color:white;
+      background-color:transparent !important;
+      border:1px solid white !important;
+      border-radius: 0.5rem;
+      &:hover {
+          color:$myColor;
+          background-color:white !important;
+          border:1px solid $myColor !important;
+          transition:0.3s;
+      }
+    }
+}
