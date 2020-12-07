@@ -4,12 +4,12 @@ $myGrey: #444444;
 
 #moviemodal {
     z-index:4;
-    margin-top:7rem;
+    margin-top:4rem;
     font-family: 'DM Sans', sans-serif;
     .close {
         color:white;
     }
-    #modal-header, #modal-body1, #modal-body2, #modal-footer {
+    #modal-header, #modal-body1, #modal-body2, #modal-body3, #modal-footer {
     background-color:$myColor !important;
     color:white;
     }
@@ -19,8 +19,9 @@ $myGrey: #444444;
     #modal-body1 {
         display:flex;
         justify-content:center;
+        border-bottom: 1px solid $myGrey;
         #modal-poster {
-            width:33%;
+            width:40%;
         }
     }
     #modal-footer {
